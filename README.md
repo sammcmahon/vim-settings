@@ -1,8 +1,13 @@
 # vim-settings
-A minimal vimrc, set of plugins, with no external dependencies.
+A minimal vimrc, set of plugins, with no non-vim dependencies.
 
 ## Installation
-Copy both .vimrc and .vim to your home directory for both Linux and MacOS.
+Run the build script to download the plugins by using `$ ./build.sh` from the root
+folder of the repository. You may have to use `$ chmod +x build.sh` to make the
+script executable.
+
+Afterwards, copy both .vimrc and .vim folder to your home directory for both Linux
+and MacOS.
 
 ## Basics
 [Pathogen](https://github.com/tpope/vim-pathogen) is used as the plugin manager
