@@ -1,6 +1,9 @@
 # vim-settings
 A minimal vimrc, set of plugins, with no external dependencies.
 
+## Installation
+Copy both .vimrc and .vim to your home directory for both Linux and MacOS.
+
 ## Basics
 [Pathogen](https://github.com/tpope/vim-pathogen) is used as the plugin manager
 here. [vim-sensible](https://github.com/tpope/vim-sensible) is used to provide
