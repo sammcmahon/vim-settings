@@ -10,7 +10,7 @@ plugins, personal settings, etc.
 ## List of Plugins
 [Ctrl-P](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file finder
 
-[NERDTREE](https://github.com/scrooloose/nerdtree): Tree file explorer
+[NERDtree](https://github.com/scrooloose/nerdtree): Tree file explorer
 
 [Supertab](https://github.com/ervandew/supertab): Autocompletion
 
