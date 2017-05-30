@@ -9,8 +9,13 @@ plugins, personal settings, etc.
 
 ## List of Plugins
 [Ctrl-P](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file finder
+
 [NERDTREE](https://github.com/scrooloose/nerdtree): Tree file explorer
+
 [Supertab](https://github.com/ervandew/supertab): Autocompletion
+
 [Syntastic](https://github.com/vim-syntastic/syntastic): Syntax checker
+
 [vim-airline](https://github.com/vim-airline/vim-airline): Status/tabline
+
 [vim-fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
