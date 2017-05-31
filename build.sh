@@ -6,13 +6,13 @@ VIMRC=~/.vimrc
 # backup old dotfiles
 if [ -e "$VIM" ]
 then
-    cp -r $VIM $VIM.bak
+    cp -rf $VIM $VIM.bak
     rm -rf $VIM
 fi
 
 if [ -e "$VIMRC" ]
 then
-    cp $VIMRC $VIMRC.bak
+    cp -f $VIMRC $VIMRC.bak
     rm -f $VIMRC
 fi
 

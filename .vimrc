@@ -24,16 +24,15 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 
-" let g:syntastic_c_checkers=['make','splint']
-
 " supertab settings
+set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
 " NERDTree settings
 map <Leader>n :NERDTreeToggle<CR>
 
 " ctrl-p settings
-map <silent> <Leader>t :CtrlP()<CR>
+map <silent> <Leader>p :CtrlP()<CR>
 noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
