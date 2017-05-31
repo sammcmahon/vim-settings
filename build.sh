@@ -24,9 +24,9 @@ mkdir $VIM/colors
 mkdir $VIM/syntax
 
 # install pathogen
-curl -LSso $VIM/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+curl -LSo $VIM/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # install colorscheme
-curl -LSso $VIM/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+curl -LSo $VIM/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 # clone the repositories for the plugins
 RETURN_DIR=$PWD
