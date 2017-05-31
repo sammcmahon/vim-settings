@@ -29,3 +29,7 @@ plugins, personal settings, etc.
 [vim-airline](https://github.com/vim-airline/vim-airline): Status/tabline
 
 [vim-fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
+
+## License
+This repository released under the MIT License, all plugins are released
+under their respective licenses.
