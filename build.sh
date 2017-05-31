@@ -1,12 +1,37 @@
 #!/usr/bin/env bash
 
-# all plugins are installed in .vim/bundle
-cd .vim
-mkdir bundle
-mkdir syntax
-cd bundle
+VIM=~/.vim
+VIMRC=~/.vimrc
+
+# backup old dotfiles
+if [ -e "$VIM" ]
+then
+    cp -r $VIM $VIM.bak
+    rm -rf $VIM
+fi
+
+if [ -e "$VIMRC" ]
+then
+    cp $VIMRC $VIMRC.bak
+    rm -f $VIMRC
+fi
+
+# make the proper folders
+mkdir $VIM
+mkdir $VIM/autoload
+mkdir $VIM/bundle
+mkdir $VIM/colors
+mkdir $VIM/syntax
+
+# install pathogen
+curl -LSso $VIM/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# install colorscheme
+curl -LSso $VIM/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 # clone the repositories for the plugins
+RETURN_DIR=$PWD
+cd $VIM/bundle
+
 git clone git://github.com/tpope/vim-sensible.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/scrooloose/nerdtree.git
@@ -18,5 +43,8 @@ git clone https://github.com/vim-airline/vim-airline-themes.git
 git clone git://github.com/tpope/vim-fugitive.git
 vim -u NONE -c "helptags vim-fugitive/doc" -c q
 
-# return to root of the repository
-cd ../..
+cd $RETURN_DIR
+
+# install .vimrc
+cp .vimrc $VIMRC
+
