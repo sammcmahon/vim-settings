@@ -38,7 +38,10 @@ let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
 set number
 set tw=80
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=4 
+set softtabstop=4 
+set shiftwidth=4 
+set expandtab smarttab
 
 let g:molokai_original = 1
 colo molokai
