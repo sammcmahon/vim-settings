@@ -14,6 +14,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " syntastic settings
 map <Leader>s :SyntasticToggleMode<CR>
+map <Leader>l :lclose<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -26,7 +27,7 @@ let g:syntastic_check_on_wq = 1
 
 " supertab settings
 set omnifunc=syntaxcomplete#Complete
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+let g:SuperTabDefaultCompletionType = 'context'
 
 " NERDTree settings
 map <Leader>n :NERDTreeToggle<CR>
