@@ -4,6 +4,9 @@ A minimal vimrc, set of plugins, with no non-vim dependencies for packages.
 ## Installation
 You must have at least curl and git on your system to build.
 
+Clone the repository:
+`$ git clone https://github.com/sammcmahon/vim-settings.git`
+
 Run the build script by using `$ ./build.sh` from the root folder of the
 repository. You may have to use `$ chmod +x build.sh` to make the script
 executable.
