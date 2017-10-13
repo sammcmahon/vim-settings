@@ -33,7 +33,6 @@ RETURN_DIR=$PWD
 cd $VIM/bundle
 
 git clone git://github.com/tpope/vim-sensible.git
-git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/ervandew/supertab.git
 git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
@@ -47,4 +46,3 @@ cd $RETURN_DIR
 
 # install .vimrc
 cp .vimrc $VIMRC
-
