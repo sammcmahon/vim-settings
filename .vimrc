@@ -30,12 +30,7 @@ set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = 'context'
 
 " NERDTree settings
-map <Leader>n :NERDTreeToggle<CR>
-
-" ctrl-p settings
-map <silent> <Leader>p :CtrlP()<CR>
-noremap <leader>b<space> :CtrlPBuffer<cr>
-let g:ctrlp_custom_ignore = '\v[\/]dist$'
+map <Leader>nt :NERDTreeToggle<CR>
 
 set number
 set tw=80
@@ -46,3 +41,13 @@ set expandtab smarttab
 
 let g:molokai_original = 1
 colo molokai
+
+" mappings for switching buffers
+map <Leader>n :bn<CR>
+map <Leader>p :bp<CR>
+
+" with great thanks to robgough's unamed co-worker
+map <Left> :echo 'you caveman'<CR>
+map <Right> :echo 'insert insult'<CR>
+map <Up> :echo 'why'<CR>
+map <Down> :echo 'use hjkl like a civilized person'<CR>
