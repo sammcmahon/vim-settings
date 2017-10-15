@@ -21,8 +21,6 @@ very basic settings, the vimrc itself only really relates to settings managing
 plugins, personal settings, etc.
 
 ## List of Plugins
-[Ctrl-P](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file finder
-
 [NERDtree](https://github.com/scrooloose/nerdtree): Tree file explorer
 
 [Supertab](https://github.com/ervandew/supertab): Autocompletion
