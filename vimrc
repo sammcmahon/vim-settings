@@ -1,12 +1,22 @@
-" set up pathogen and vim-sensible
-execute pathogen#infect()
-runtime! plugin/sensible.vim
+" set up vim-plug
+call plug#begin('~/.vim/plugged')
 
-" kill trailing whitespace
-autocmd BufWritePre <buffer> %s/\s\+$//e
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'ervandew/supertab'
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
+Plug 'tomasr/molokai'
 
-syntax on
-filetype plugin indent on
+" initialize plugin system
+call plug#end()
+
+if empty(glob('~/.vim/plugged'))
+  PlugInstall
+endif
 
 " vim-airline settings
 let g:airline_theme='molokai'
@@ -34,20 +44,26 @@ map <Leader>nt :NERDTreeToggle<CR>
 
 set number
 set tw=80
-set tabstop=4 
-set softtabstop=4 
-set shiftwidth=4 
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab smarttab
 
-let g:molokai_original = 1
 colo molokai
+
+syntax on
+filetype plugin indent on
+
+" kill trailing whitespace
+autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " mappings for switching buffers
 map <Leader>n :bn<CR>
 map <Leader>p :bp<CR>
 
 " with great thanks to robgough's unamed co-worker
-" map <Left> :echo 'you caveman'<CR>
-" map <Right> :echo 'insert insult'<CR>
-" map <Up> :echo 'why'<CR>
-" map <Down> :echo 'use hjkl like a civilized person'<CR>
+map <Left> :echo 'you caveman'<CR>
+map <Right> :echo 'insert insult'<CR>
+map <Up> :echo 'why'<CR>
+map <Down> :echo 'use hjkl like a civilized person'<CR>
+

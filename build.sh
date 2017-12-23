@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -u
 
 VIM=~/.vim
 VIMRC=~/.vimrc
@@ -6,43 +7,24 @@ VIMRC=~/.vimrc
 # backup old dotfiles
 if [ -e "$VIM" ]
 then
+    echo "Backing up old .vim folder"
     cp -rf $VIM $VIM.bak
     rm -rf $VIM
 fi
 
 if [ -e "$VIMRC" ]
 then
-    cp -f $VIMRC $VIMRC.bak
-    rm -f $VIMRC
+    echo "Backing up old .vimrc file"
+    mv -f $VIMRC $VIMRC.bak
 fi
 
-# make the proper folders
-mkdir $VIM
-mkdir $VIM/autoload
-mkdir $VIM/bundle
-mkdir $VIM/colors
-mkdir $VIM/syntax
+# install vimrc
+cp vimrc $VIMRC
 
-# install pathogen
-curl -LSo $VIM/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-# install colorscheme
-curl -LSo $VIM/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+# install vim-plug
+echo "Installing vim-plug..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# clone the repositories for the plugins
-RETURN_DIR=$PWD
-cd $VIM/bundle
-
-git clone git://github.com/tpope/vim-sensible.git
-git clone https://github.com/scrooloose/nerdtree.git
-git clone https://github.com/ervandew/supertab.git
-git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
-git clone https://github.com/vim-airline/vim-airline.git
-git clone https://github.com/vim-airline/vim-airline-themes.git
-# vim-fugitive specific commands
-git clone git://github.com/tpope/vim-fugitive.git
-vim -u NONE -c "helptags vim-fugitive/doc" -c q
-
-cd $RETURN_DIR
-
-# install .vimrc
-cp .vimrc $VIMRC
+# run vim to install plugins
+echo "Installing plugins..."
+vim -c qa! &> /dev/null
