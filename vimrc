@@ -3,8 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'ervandew/supertab'
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -34,13 +32,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
-
-" supertab settings
-set omnifunc=syntaxcomplete#Complete
-let g:SuperTabDefaultCompletionType = 'context'
-
-" NERDTree settings
-map <Leader>nt :NERDTreeToggle<CR>
 
 set number
 set tw=80

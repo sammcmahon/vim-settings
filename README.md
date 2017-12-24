@@ -21,8 +21,6 @@ very basic settings, the vimrc itself only really relates to settings managing
 plugins, personal settings, etc.
 
 ## List of Plugins
-* [NERDtree](https://github.com/scrooloose/nerdtree): Tree file explorer
-* [Supertab](https://github.com/ervandew/supertab): Autocompletion
 * [Syntastic](https://github.com/vim-syntastic/syntastic): Syntax checker
 * [vim-airline](https://github.com/vim-airline/vim-airline): Status/tabline
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
