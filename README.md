@@ -36,10 +36,11 @@ plugins, personal settings, etc.
 * [syntastic](https://github.com/vim-syntastic/syntastic): Syntax checker
 
 ## Keybindings
-By default, the leader key in vim is "\". The full listing of keybindings in
+By default, the \<Leader\> key in vim is the backslash. The full listing of keybindings in
 the vimrc:
 
 |Binding    |Command                    |Comment                                                |
+|-----------|---------------------------|-------------------------------------------------------|
 |<Leader>s  |:SyntasticToggleMode<CR>   |Toggles syntastic on and off                           |
 |<Leader>c  |:lclose<CR>                |Closes loclist (where syntax error messages show up)   |
 |<Leader>o  |:lopen<CR>                 |Opens loclist                                          |
