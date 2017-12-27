@@ -1,3 +1,5 @@
+set nocompatible
+
 " set up vim-plug
 call plug#begin('~/.vim/plugged')
 
