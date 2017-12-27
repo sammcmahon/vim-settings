@@ -41,13 +41,13 @@ the vimrc:
 
 |Binding    |Command                    |Comment                                                |
 |-----------|---------------------------|-------------------------------------------------------|
-|<Leader>s  |:SyntasticToggleMode<CR>   |Toggles syntastic on and off                           |
-|<Leader>c  |:lclose<CR>                |Closes loclist (where syntax error messages show up)   |
-|<Leader>o  |:lopen<CR>                 |Opens loclist                                          |
-|<Leader>f  |:Files<CR>                 |fzf window to open a new file                          |
-|<Leader>b  |:Buffers<CR>               |fzf window to go to open buffer                        |
-|<Leader>n  |:bn<CR>                    |Switch to next buffer                                  |
-|<Leader>p  |:bp<CR>                    |Switch to previous buffer                              |
+|\<Leader\>s|:SyntasticToggleMode<CR>   |Toggles syntastic on and off                           |
+|\<Leader\>c|:lclose<CR>                |Closes loclist (where syntax error messages show up)   |
+|\<Leader\>o|:lopen<CR>                 |Opens loclist                                          |
+|\<Leader\>f|:Files<CR>                 |fzf window to open a new file                          |
+|\<Leader\>b|:Buffers<CR>               |fzf window to go to open buffer                        |
+|\<Leader\>n|:bn<CR>                    |Switch to next buffer                                  |
+|\<Leader\>p|:bp<CR>                    |Switch to previous buffer                              |
 
 ## License
 This repository released under the MIT License, all plugins are released
