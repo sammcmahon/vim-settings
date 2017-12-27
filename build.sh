@@ -27,4 +27,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # run vim to install plugins
 echo "Installing plugins..."
-vim -c qa! &> /dev/null
+vim +PlugInstall +qall > /dev/null
+
+echo "Read README.md for plugin info, keybindings."
+vim +PlugStatus README.md
