@@ -12,9 +12,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tomasr/molokai'
 Plug 'w0rp/ale'
-Plug 'fatih/vim-go'
-Plug 'rhysd/vim-grammarous'
-Plug 'sjl/gundo.vim'
 
 " initialize plugin system
 call plug#end()
