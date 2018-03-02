@@ -11,7 +11,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tomasr/molokai'
-Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 Plug 'fatih/vim-go'
 Plug 'rhysd/vim-grammarous'
 Plug 'sjl/gundo.vim'
@@ -77,8 +77,8 @@ map <Leader>n :bn<CR>
 map <Leader>p :bp<CR>
 
 " with great thanks to robgough's unamed co-worker
-" map <Left> :echo 'you caveman'<CR>
-" map <Right> :echo 'insert insult'<CR>
-" map <Up> :echo 'why'<CR>
-" map <Down> :echo 'use hjkl like a civilized person'<CR>
+map <Left> :echo 'you caveman'<CR>
+map <Right> :echo 'insert insult'<CR>
+map <Up> :echo 'why'<CR>
+map <Down> :echo 'use hjkl like a civilized person'<CR>
 
