@@ -12,6 +12,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tomasr/molokai'
 Plug 'w0rp/ale'
+Plug 'ludovicchabant/vim-gutentags'
 
 " initialize plugin system
 call plug#end()
@@ -44,6 +45,9 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" gutentags settings
+set statusline+=%{gutentags#statusline()}
 
 set number
 set tw=80

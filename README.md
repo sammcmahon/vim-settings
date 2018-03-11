@@ -2,7 +2,7 @@
 A minimal vimrc, set of plugins, with minimal non-vim dependencies.
 
 ## Installation
-You must have at least curl and git on your system to build.
+You must have at least vim 8, curl, and git on your system to build.
 
 Clone the repository:
 `$ git clone https://github.com/sammcmahon/vim-settings.git`
@@ -33,7 +33,8 @@ plugins, personal settings, etc.
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
 * [molokai](https://github.com/tomasr/molokai): Color theme
-* [syntastic](https://github.com/vim-syntastic/syntastic): Syntax checker
+* [ale](https://github.com/w0rp/ale): Syntax checker
+* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): Tag file management
 
 ## Keybindings
 By default, the \<Leader\> key in vim is the backslash. The full listing of keybindings in
