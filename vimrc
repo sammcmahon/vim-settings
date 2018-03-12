@@ -21,8 +21,7 @@ call plug#end()
 let g:airline_theme='molokai'
 let g:airline#extensions#tabline#enabled = 1
 
-" syntastic settings
-map <Leader>s :SyntasticToggleMode<CR>
+" loclist settings
 map <Leader>c :lclose<CR>
 map <Leader>o :lopen<CR>
 
