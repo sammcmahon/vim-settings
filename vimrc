@@ -10,16 +10,20 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'rhysd/vim-grammarous'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'tomasr/molokai'
 Plug 'w0rp/ale'
-Plug 'ludovicchabant/vim-gutentags'
 
 " initialize plugin system
 call plug#end()
 
 " vim-airline settings
 let g:airline_theme='molokai'
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled=1
+
+" vim-gutentags settings
+let g:gutentags_dont_load=1
 
 " loclist settings
 map <Leader>c :lclose<CR>
