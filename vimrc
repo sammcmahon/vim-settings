@@ -3,27 +3,27 @@ set nocompatible
 " set up vim-plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible' 
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
-Plug 'rhysd/vim-grammarous'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'tomasr/molokai'
 Plug 'w0rp/ale'
+Plug 'rhysd/vim-grammarous'
+Plug 'agude/vim-eldar'
+Plug 'fatih/vim-go'
 
 " initialize plugin system
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='molokai'
-let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='monochrome'
 
 " vim-gutentags settings
-let g:gutentags_dont_load=1
+let g:gutentags_dont_load = 1
+set statusline+=%{gutentags#statusline()}
 
 " loclist settings
 map <Leader>c :lclose<CR>
@@ -49,17 +49,12 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-" gutentags settings
-set statusline+=%{gutentags#statusline()}
-
 set number
 set tw=80
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab smarttab
-
-silent! colo molokai
 
 syntax on
 filetype plugin indent on
@@ -76,4 +71,18 @@ map <Left> :echo 'you caveman'<CR>
 map <Right> :echo 'insert insult'<CR>
 map <Up> :echo 'why'<CR>
 map <Down> :echo 'use hjkl like a civilized person'<CR>
+
+augroup vimrc
+  autocmd!
+  autocmd ColorScheme * 
+  \ highlight Normal ctermbg=black 
+  \ | highlight EndOfBuffer ctermfg=black ctermbg=black 
+  \ | highlight SignColumn ctermbg=black
+  \ | highlight StatusLine ctermfg=black ctermbg=black
+  \ | highlight StatusLineNC ctermfg=black ctermbg=black
+augroup END
+
+set t_Co=256
+silent! colo eldar
+set bg=dark
 
