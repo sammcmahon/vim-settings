@@ -13,7 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'rhysd/vim-grammarous'
 Plug 'agude/vim-eldar'
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 
 " initialize plugin system
 call plug#end()
@@ -67,10 +67,10 @@ map <Leader>n :bn<CR>
 map <Leader>p :bp<CR>
 
 " with great thanks to robgough's unamed co-worker
-map <Left> :echo 'you caveman'<CR>
-map <Right> :echo 'insert insult'<CR>
-map <Up> :echo 'why'<CR>
-map <Down> :echo 'use hjkl like a civilized person'<CR>
+" map <Left> :echo 'you caveman'<CR>
+" map <Right> :echo 'insert insult'<CR>
+" map <Up> :echo 'why'<CR>
+" map <Down> :echo 'use hjkl like a civilized person'<CR>
 
 augroup vimrc
   autocmd!
@@ -81,6 +81,8 @@ augroup vimrc
   \ | highlight StatusLine ctermfg=black ctermbg=black
   \ | highlight StatusLineNC ctermfg=black ctermbg=black
 augroup END
+
+set fillchars=""
 
 set t_Co=256
 silent! colo eldar
