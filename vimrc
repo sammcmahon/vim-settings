@@ -78,8 +78,8 @@ augroup vimrc
   \ highlight Normal ctermbg=black 
   \ | highlight EndOfBuffer ctermfg=black ctermbg=black 
   \ | highlight SignColumn ctermbg=black
-  \ | highlight StatusLine ctermfg=black ctermbg=black
-  \ | highlight StatusLineNC ctermfg=black ctermbg=black
+  \ | highlight StatusLine ctermfg=black ctermbg=white
+  \ | highlight StatusLineNC ctermfg=black ctermbg=white
 augroup END
 
 set fillchars=""
