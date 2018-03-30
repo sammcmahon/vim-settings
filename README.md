@@ -32,7 +32,7 @@ plugins, personal settings, etc.
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): Language pack
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
-* [molokai](https://github.com/tomasr/molokai): Color theme
+* [vim-eldar](https://github.com/agude/vim-eldar): Color theme
 * [ale](https://github.com/w0rp/ale): Syntax checker
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): Tag file management
 
@@ -42,7 +42,6 @@ the vimrc:
 
 |Binding    |Command                    |Comment                                                |
 |-----------|---------------------------|-------------------------------------------------------|
-|\<Leader\>s|:SyntasticToggleMode<CR>   |Toggles syntastic on and off                           |
 |\<Leader\>c|:lclose<CR>                |Closes loclist (where syntax error messages show up)   |
 |\<Leader\>o|:lopen<CR>                 |Opens loclist                                          |
 |\<Leader\>f|:Files<CR>                 |fzf window to open a new file                          |
