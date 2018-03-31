@@ -1,5 +1,3 @@
-set nocompatible
-
 " set up vim-plug
 call plug#begin('~/.vim/plugged')
 
@@ -7,11 +5,11 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'rhysd/vim-grammarous'
 Plug 'agude/vim-eldar'
 " Plug 'fatih/vim-go'
 
@@ -19,7 +17,6 @@ Plug 'agude/vim-eldar'
 call plug#end()
 
 " vim-airline settings
-let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='minimalist'
 
 " vim-gutentags settings
@@ -51,7 +48,7 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 set number
-set tw=80
+set textwidth=80
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -61,7 +58,10 @@ syntax on
 filetype plugin indent on
 
 " kill trailing whitespace
-autocmd FileType c,make,markdown,vim autocmd BufWritePre <buffer> %s/\s\+$//e
+augroup TrailingWhitespace
+    autocmd FileType c,make,markdown,vim
+    autocmd BufWritePre <buffer> %s/\s\+$//e
+augroup END
 
 " mappings for switching buffers
 map <Leader>n :bn<CR>
@@ -77,5 +77,5 @@ set fillchars=""
 
 set t_Co=256
 silent! colo eldar
-set bg=dark
+set background=dark
 

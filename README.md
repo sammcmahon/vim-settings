@@ -27,8 +27,8 @@ plugins, personal settings, etc.
 * [vim-sensible](https://github.com/tpope/vim-sensible): Default vim settings
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): Git wrapper
 * [vim-airline](https://github.com/vim-airline/vim-airline): Status bar
-* [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes): Airline theme
-  pack
+* [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes): Airline theme pack
+* [vim-bufferline](https://github.com/bling/vim-bufferline): Airline plugin
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): Language pack
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
