@@ -11,7 +11,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'agude/vim-eldar'
-" Plug 'fatih/vim-go'
 
 " initialize plugin system
 call plug#end()
@@ -59,8 +58,15 @@ filetype plugin indent on
 
 " kill trailing whitespace
 augroup TrailingWhitespace
-    autocmd FileType c,make,markdown,vim
-    autocmd BufWritePre <buffer> %s/\s\+$//e
+    autocmd FileType c,make,markdown,sh,vim
+    \ autocmd BufWritePre <buffer> %s/\s\+$//e
+augroup END
+
+" color scheme overrides
+augroup vimrc
+    autocmd ColorScheme evolution
+    \ highlight Comment cterm=NONE ctermfg=59
+    \ | highlight NonText cterm=NONE ctermbg=NONE
 augroup END
 
 " mappings for switching buffers
