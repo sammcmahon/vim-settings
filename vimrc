@@ -10,7 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'agude/vim-eldar'
+Plug 'petelewis/vim-evolution'
 
 " initialize plugin system
 call plug#end()
@@ -82,6 +82,6 @@ map <Leader>p :bp<CR>
 set fillchars=""
 
 set t_Co=256
-silent! colo eldar
+silent! colo evolution
 set background=dark
 
