@@ -10,7 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'petelewis/vim-evolution'
+Plug 'nanotech/jellybeans.vim'
 
 " initialize plugin system
 call plug#end()
@@ -62,13 +62,6 @@ augroup TrailingWhitespace
     \ autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
 
-" color scheme overrides
-augroup vimrc
-    autocmd ColorScheme evolution
-    \ highlight Comment cterm=NONE ctermfg=59
-    \ | highlight NonText cterm=NONE ctermbg=NONE
-augroup END
-
 " mappings for switching buffers
 map <Leader>n :bn<CR>
 map <Leader>p :bp<CR>
@@ -82,6 +75,6 @@ map <Leader>p :bp<CR>
 set fillchars=""
 
 set t_Co=256
-silent! colo evolution
+silent! colo jellybeans
 set background=dark
 

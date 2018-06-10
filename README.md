@@ -33,7 +33,7 @@ plugins, personal settings, etc.
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
 * [vim-eldar](https://github.com/agude/vim-eldar): Color theme
-* [vim-evolution](https://github.com/petelewis/vim-evolution): Color theme
+* [jellybeans.vim](https://github.cim/nanotech/jellybeans.vim): Color theme
 * [ale](https://github.com/w0rp/ale): Syntax checker
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): Tag file management
 
