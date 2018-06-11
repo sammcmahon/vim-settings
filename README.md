@@ -32,10 +32,10 @@ plugins, personal settings, etc.
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): Language pack
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
-* [vim-eldar](https://github.com/agude/vim-eldar): Color theme
 * [jellybeans.vim](https://github.cim/nanotech/jellybeans.vim): Color theme
 * [ale](https://github.com/w0rp/ale): Syntax checker
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): Tag file management
+* [NERDTree](https://github.com/scrooloose/nerdtree): File tree explorer
 
 ## Keybindings
 By default, the \<Leader\> key in vim is the backslash. The full listing of keybindings in

@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'nanotech/jellybeans.vim'
+Plug 'scrooloose/nerdtree'
 
 " initialize plugin system
 call plug#end()
@@ -62,15 +63,24 @@ augroup TrailingWhitespace
     \ autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
 
+" NERDTree settings
+augroup NERDTree
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup END
+
+map <Leader>t :NERDTreeToggle<CR>
+
 " mappings for switching buffers
 map <Leader>n :bn<CR>
 map <Leader>p :bp<CR>
 
 " with great thanks to robgough's unamed co-worker
-" map <Left> :echo 'you caveman'<CR>
-" map <Right> :echo 'insert insult'<CR>
-" map <Up> :echo 'why'<CR>
-" map <Down> :echo 'use hjkl like a civilized person'<CR>
+map <Left> :echo 'you caveman'<CR>
+map <Right> :echo 'insert insult'<CR>
+map <Up> :echo 'why'<CR>
+map <Down> :echo 'use hjkl like a civilized person'<CR>
 
 set fillchars=""
 
