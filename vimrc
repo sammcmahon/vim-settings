@@ -65,8 +65,6 @@ augroup END
 
 " NERDTree settings
 augroup NERDTree
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup END
 
@@ -83,6 +81,15 @@ map <Up> :echo 'why'<CR>
 map <Down> :echo 'use hjkl like a civilized person'<CR>
 
 set fillchars=""
+
+" color scheme overrides
+augroup ColorSchemeOverrides
+    autocmd ColorScheme *
+    \   highlight Statement     cterm=bold
+    \ | highlight Keyword       cterm=bold
+    \ | highlight Exception     cterm=bold
+    \ | highlight MatchParen    cterm=bold
+augroup END
 
 set t_Co=256
 silent! colo jellybeans

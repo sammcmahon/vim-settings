@@ -49,6 +49,7 @@ the vimrc:
 |\<Leader\>b|:Buffers<CR>               |fzf window to go to open buffer                        |
 |\<Leader\>n|:bn<CR>                    |Switch to next buffer                                  |
 |\<Leader\>p|:bp<CR>                    |Switch to previous buffer                              |
+|\<Leader\>t|:NERDTreeToggle<CR>        |Toggle NERDTree window                                 |
 
 ## License
 This repository released under the MIT License, all plugins are released
