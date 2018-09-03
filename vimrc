@@ -10,14 +10,14 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'nanotech/jellybeans.vim'
+Plug 'tomasr/molokai'
 Plug 'scrooloose/nerdtree'
 
 " initialize plugin system
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='minimalist'
+let g:airline_theme='molokai'
 
 " vim-gutentags settings
 let g:gutentags_dont_load = 1
@@ -92,6 +92,6 @@ augroup ColorSchemeOverrides
 augroup END
 
 set t_Co=256
-silent! colo jellybeans
+silent! colo molokai
 set background=dark
 
