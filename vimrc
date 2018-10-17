@@ -12,6 +12,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'tomasr/molokai'
 Plug 'scrooloose/nerdtree'
+Plug 'ludovicchabant/vim-gutentags'
 
 " initialize plugin system
 call plug#end()
@@ -20,7 +21,6 @@ call plug#end()
 let g:airline_theme='molokai'
 
 " vim-gutentags settings
-let g:gutentags_dont_load = 1
 set statusline+=%{gutentags#statusline()}
 
 " loclist settings
@@ -94,4 +94,3 @@ augroup END
 set t_Co=256
 silent! colo molokai
 set background=dark
-
