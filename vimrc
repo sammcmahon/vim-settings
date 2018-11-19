@@ -10,7 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'tomasr/molokai'
+Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -18,7 +18,8 @@ Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='molokai'
+let g:airline_theme='gruvbox'
+let g:airline_powerline_fonts=1
 
 " vim-gutentags settings
 set statusline+=%{gutentags#statusline()}
@@ -83,14 +84,19 @@ map <Down> :echo 'use hjkl like a civilized person'<CR>
 set fillchars=""
 
 " color scheme overrides
-augroup ColorSchemeOverrides
-    autocmd ColorScheme *
-    \   highlight Statement     cterm=bold
-    \ | highlight Keyword       cterm=bold
-    \ | highlight Exception     cterm=bold
-    \ | highlight MatchParen    cterm=bold
-augroup END
+" augroup ColorSchemeOverrides
+"     autocmd ColorScheme *
+"     \   highlight Statement     cterm=bold
+"     \ | highlight Keyword       cterm=bold
+"     \ | highlight Exception     cterm=bold
+"     \ | highlight MatchParen    cterm=bold
+" augroup END
 
-set t_Co=256
-silent! colo molokai
+" set Vim-specific sequences for RGB colors
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 set background=dark
+let g:gruvbox_contrast_dark='hard'
+silent! colo gruvbox
