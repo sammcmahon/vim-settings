@@ -10,19 +10,13 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
-Plug 'ludovicchabant/vim-gutentags'
 
 " initialize plugin system
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='gruvbox'
-let g:airline_powerline_fonts=1
-
-" vim-gutentags settings
-set statusline+=%{gutentags#statusline()}
+let g:airline_theme='minimalist'
 
 " loclist settings
 map <Leader>c :lclose<CR>
@@ -93,10 +87,7 @@ set fillchars=""
 " augroup END
 
 " set Vim-specific sequences for RGB colors
-set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-set background=dark
-let g:gruvbox_contrast_dark='hard'
-silent! colo gruvbox
+" set termguicolors
+" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+silent! colo elflord
