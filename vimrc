@@ -54,7 +54,7 @@ filetype plugin indent on
 
 " kill trailing whitespace
 augroup TrailingWhitespace
-    autocmd FileType c,make,markdown,sh,vim
+    autocmd FileType c,make,markdown,sh
     \ autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
 
@@ -75,19 +75,13 @@ map <Right> :echo 'insert insult'<CR>
 map <Up> :echo 'why'<CR>
 map <Down> :echo 'use hjkl like a civilized person'<CR>
 
-set fillchars=""
-
 " color scheme overrides
-" augroup ColorSchemeOverrides
-"     autocmd ColorScheme *
-"     \   highlight Statement     cterm=bold
-"     \ | highlight Keyword       cterm=bold
-"     \ | highlight Exception     cterm=bold
-"     \ | highlight MatchParen    cterm=bold
-" augroup END
+augroup ColorSchemeOverrides
+    autocmd ColorScheme * hi clear SignColumn | hi clear VertSplit | hi VertSplit ctermfg=black
+augroup END
 
 " set Vim-specific sequences for RGB colors
 " set termguicolors
 " let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 " let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-silent! colo elflord
+silent! colo ron
