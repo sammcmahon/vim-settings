@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
+Plug 'noahfrederick/vim-noctu'
 
 " initialize plugin system
 call plug#end()
@@ -84,4 +85,4 @@ augroup END
 " set termguicolors
 " let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 " let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-silent! colo ron
+silent! colo noctu
