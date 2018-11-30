@@ -10,18 +10,14 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'tomasr/molokai'
 Plug 'scrooloose/nerdtree'
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'noahfrederick/vim-noctu'
 
 " initialize plugin system
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='molokai'
-
-" vim-gutentags settings
-set statusline+=%{gutentags#statusline()}
+let g:airline_theme='minimalist'
 
 " loclist settings
 map <Leader>c :lclose<CR>
@@ -59,7 +55,7 @@ filetype plugin indent on
 
 " kill trailing whitespace
 augroup TrailingWhitespace
-    autocmd FileType c,make,markdown,sh,vim
+    autocmd FileType c,make,markdown,sh
     \ autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
 
@@ -80,17 +76,13 @@ map <Right> :echo 'insert insult'<CR>
 map <Up> :echo 'why'<CR>
 map <Down> :echo 'use hjkl like a civilized person'<CR>
 
-set fillchars=""
-
 " color scheme overrides
 augroup ColorSchemeOverrides
-    autocmd ColorScheme *
-    \   highlight Statement     cterm=bold
-    \ | highlight Keyword       cterm=bold
-    \ | highlight Exception     cterm=bold
-    \ | highlight MatchParen    cterm=bold
+    autocmd ColorScheme * hi clear SignColumn | hi clear VertSplit | hi VertSplit ctermfg=black
 augroup END
 
-set t_Co=256
-silent! colo molokai
-set background=dark
+" set Vim-specific sequences for RGB colors
+" set termguicolors
+" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+silent! colo noctu
