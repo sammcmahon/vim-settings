@@ -17,7 +17,8 @@ Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='minimalist'
+let g:airline_theme='papercolor'
+let g:airline_powerline_fonts=1
 
 " loclist settings
 map <Leader>c :lclose<CR>
