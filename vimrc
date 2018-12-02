@@ -11,7 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
-Plug 'noahfrederick/vim-noctu'
+Plug 'NLKNguyen/papercolor-theme'
 
 " initialize plugin system
 call plug#end()
@@ -82,7 +82,15 @@ augroup ColorSchemeOverrides
 augroup END
 
 " set Vim-specific sequences for RGB colors
-" set termguicolors
-" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-silent! colo noctu
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set background=dark
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'transparent_background': 1
+  \     }
+  \   }
+  \ }
+silent! colo PaperColor
