@@ -12,6 +12,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'ludovicchabant/vim-gutentags'
 
 " initialize plugin system
 call plug#end()
@@ -81,6 +82,9 @@ map <Down> :echo 'use hjkl like a civilized person'<CR>
 augroup ColorSchemeOverrides
     autocmd ColorScheme * hi clear SignColumn | hi clear VertSplit | hi VertSplit ctermfg=black
 augroup END
+
+" intentional trailing whitespace (' ' as fill char)
+set fillchars+=vert:\ 
 
 " set Vim-specific sequences for RGB colors
 set termguicolors
