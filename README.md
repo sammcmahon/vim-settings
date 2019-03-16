@@ -30,10 +30,12 @@ plugins, personal settings, etc.
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes): Airline theme pack
 * [vim-bufferline](https://github.com/bling/vim-bufferline): Airline plugin
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): Language pack
+* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags): Tagfile generator
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
 * [ale](https://github.com/w0rp/ale): Syntax checker
 * [NERDTree](https://github.com/scrooloose/nerdtree): File tree explorer
+* [PaperColor](https://github.com/NLKNguyen/papercolor-theme) Color theme
 
 ## Keybindings
 By default, the \<Leader\> key in vim is the backslash. The full listing of keybindings in
@@ -47,7 +49,6 @@ the vimrc:
 |\<Leader\>b|:Buffers<CR>               |fzf window to go to open buffer                        |
 |\<Leader\>n|:bn<CR>                    |Switch to next buffer                                  |
 |\<Leader\>p|:bp<CR>                    |Switch to previous buffer                              |
-|\<Leader\>t|:NERDTreeToggle<CR>        |Toggle NERDTree window                                 |
 
 ## License
 This repository released under the MIT License, all plugins are released

@@ -7,12 +7,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 Plug 'sheerun/vim-polyglot'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'scrooloose/nerdtree'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'ludovicchabant/vim-gutentags'
 
 " initialize plugin system
 call plug#end()
@@ -84,18 +83,9 @@ augroup ColorSchemeOverrides
 augroup END
 
 " intentional trailing whitespace (' ' as fill char)
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 
-" set Vim-specific sequences for RGB colors
-set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+" set color
+set t_Co=256
 set background=dark
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default': {
-  \       'transparent_background': 1
-  \     }
-  \   }
-  \ }
 silent! colo PaperColor
