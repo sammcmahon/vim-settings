@@ -34,7 +34,6 @@ plugins, personal settings, etc.
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
 * [ale](https://github.com/w0rp/ale): Syntax checker
-* [NERDTree](https://github.com/scrooloose/nerdtree): File tree explorer
 * [PaperColor](https://github.com/NLKNguyen/papercolor-theme) Color theme
 
 ## Keybindings

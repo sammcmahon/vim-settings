@@ -49,23 +49,16 @@ set textwidth=80
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab smarttab
+set smarttab
 
 syntax on
 filetype plugin indent on
 
 " kill trailing whitespace
 augroup TrailingWhitespace
-    autocmd FileType c,make,markdown,sh
+    autocmd FileType c,go,make,markdown,sh
     \ autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
-
-" NERDTree settings
-augroup NERDTree
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-augroup END
-
-map <Leader>t :NERDTreeToggle<CR>
 
 " mappings for switching buffers
 map <Leader>n :bn<CR>
