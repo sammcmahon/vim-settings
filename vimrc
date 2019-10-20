@@ -7,17 +7,15 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-bufferline'
 Plug 'sheerun/vim-polyglot'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'noahfrederick/vim-noctu'
 
 " initialize plugin system
 call plug#end()
 
 " vim-airline settings
-let g:airline_theme='papercolor'
+let g:airline_theme='base16'
 let g:airline_powerline_fonts=1
 
 " loclist settings
@@ -76,9 +74,9 @@ augroup ColorSchemeOverrides
 augroup END
 
 " intentional trailing whitespace (' ' as fill char)
-set fillchars+=vert:\
+set fillchars+=vert:\ 
 
 " set color
 set t_Co=256
 set background=dark
-silent! colo PaperColor
+silent! colo noctu
