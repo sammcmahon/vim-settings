@@ -9,6 +9,7 @@ Plug 'bling/vim-bufferline'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
 Plug 'noahfrederick/vim-noctu'
 
 " initialize plugin system
@@ -16,7 +17,7 @@ call plug#end()
 
 " vim-airline settings
 let g:airline_theme='base16'
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
 
 " loclist settings
 map <Leader>c :lclose<CR>
@@ -43,6 +44,8 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 set number
+set relativenumber
+set cursorline
 set textwidth=80
 set tabstop=4
 set softtabstop=4
