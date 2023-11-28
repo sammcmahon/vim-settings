@@ -50,5 +50,5 @@ the vimrc:
 |\<Leader\>p|:bp<CR>                    |Switch to previous buffer                              |
 
 ## License
-This repository released under the MIT License, all plugins are released
+This repository is released under the MIT License, all plugins are released
 under their respective licenses.
