@@ -1,3 +1,5 @@
+" Copyright (c) 2017-2023 Sam McMahon
+
 " set up vim-plug
 call plug#begin('~/.vim/plugged')
 

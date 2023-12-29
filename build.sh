@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# Copyright (c) 2017-2023 Sam McMahon
+
 set -u
 
 VIM=~/.vim
