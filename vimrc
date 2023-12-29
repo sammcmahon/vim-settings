@@ -65,12 +65,6 @@ augroup END
 map <Leader>n :bn<CR>
 map <Leader>p :bp<CR>
 
-" with great thanks to robgough's unamed co-worker
-map <Left> :echo 'you caveman'<CR>
-map <Right> :echo 'insert insult'<CR>
-map <Up> :echo 'why'<CR>
-map <Down> :echo 'use hjkl like a civilized person'<CR>
-
 " color scheme overrides
 augroup ColorSchemeOverrides
     autocmd ColorScheme * hi clear SignColumn | hi clear VertSplit | hi VertSplit ctermfg=black
