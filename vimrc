@@ -1,4 +1,4 @@
-" Copyright (c) 2017-2023 Sam McMahon
+" Copyright (c) 2017-2024 Sam McMahon
 
 " set up vim-plug
 call plug#begin('~/.vim/plugged')
@@ -79,3 +79,9 @@ set fillchars+=vert:\
 set t_Co=256
 set background=dark
 silent! colo noctu
+
+" force 'hjkl' navigation in normal mode, to keep hands on home row
+map <Left> :echo 'you caveman'<CR>
+map <Right> :echo 'insert insult'<CR>
+map <Up> :echo 'why'<CR>
+map <Down> :echo 'use hjkl like a civilized person'<CR>

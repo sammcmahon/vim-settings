@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2017-2023 Sam McMahon
+# Copyright (c) 2017-2024 Sam McMahon
 
 set -u
 
