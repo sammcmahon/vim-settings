@@ -34,7 +34,8 @@ plugins, personal settings, etc.
 * [fzf](https://github.com/junegunn/fzf): Fuzzy finder
 * [fzf.vim](https://github.com/junegunn/fzf.vim): fzf vim integration
 * [ale](https://github.com/dense-analysis/ale): Syntax checker and LSP client
-* [vim-noctu](https://github.com/noahfrederick/vim-noctu) Color theme
+* [vim-noctu](https://github.com/noahfrederick/vim-noctu): Color theme
+* [supertab](https://github.com/ervandew/supertab): Tab for insert mode completions
 
 ## Keybindings
 By default, the \<Leader\> key in vim is the backslash. The full listing of keybindings in

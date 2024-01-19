@@ -13,6 +13,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.vim/fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'noahfrederick/vim-noctu'
+Plug 'ervandew/supertab'
 
 " initialize plugin system
 call plug#end()
